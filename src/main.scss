@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+
+h1, h2, span
+{
+    margin: 0;
+    line-height: 1.2;
+}
+
+.noise
+{
+    background: url(./image/noise6.png);
+    color: transparent;
+    background-clip: text;
+    animation-name: noise;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(7);
+
+    @keyframes noise
+    {
+        from 
+        {
+            background-position-x: 0px;
+        }
+        to
+        {
+            background-position-x: 100px;
+        }
+    }
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+    
+    background-image: url("image/sebastian-unrau-forest.png");
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-rows: 3fr 2fr 3fr;
+    grid-template-columns: 1fr;
+}
+
+header
+{
+    grid-row: 2/3;
+
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10vw;
+    max-width: 960px;
+    text-align: left;
+    >h1 
+    {
+        margin-bottom: 10px;
+        font-size: 80px;
+        font-weight: 300;
+
+        >span
+        {
+            font-weight: 700;
+            
+
+
+        }
+    }
+
+    >h2
+    {
+        color: #91b191;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+
+}
+
+nav
+{
+    grid-row: 1/2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    >a
+    {
+        margin-top: 30px;
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 5px;
+    }
+}
+
+footer
+{
+    grid-row: 3/4;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    >a
+    {
+        margin: 0px 30px 30px 30px;
+        font-size: 50px;
+    };
+}

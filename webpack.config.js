@@ -17,6 +17,14 @@ const config = {
                 exclude: /node_modules/
             },
             {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    "postcss-loader"
+                ]
+            },
+            {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
@@ -40,7 +48,6 @@ const config = {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'url-loader',
                 options: {
-                    limit: 4096,
                     name: './fonts/[name].[ext]?[hash]', // was '/fonts/[name].[ext]?[hash]',
                 },
             }
@@ -48,7 +55,7 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            appMountId: 'app',
+            template: 'src/index.html',
             filename: 'index.html'
         }),
         new MiniCssExtractPlugin()
