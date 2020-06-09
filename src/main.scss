@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-
+@import 'loading';
 
 
 h1, h2, span
@@ -48,13 +48,16 @@ body
     background-repeat: no-repeat;
 
     display: grid;
-    grid-template-rows: 3fr 2fr 3fr;
+    grid-template-rows: 1fr 2fr 3fr 2fr 1fr;
     grid-template-columns: 1fr;
 }
 
 header
 {
-    grid-row: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     font-family: 'Poppins', sans-serif;
     margin-left: 10vw;
@@ -90,7 +93,7 @@ nav
 {
     grid-row: 1/2;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
 
     >a
@@ -99,12 +102,14 @@ nav
         font-size: 15px;
         font-weight: 300;
         letter-spacing: 5px;
+        cursor: pointer;
     }
 }
 
 footer
 {
-    grid-row: 3/4;
+    position: relative;
+    grid-row: 4/6;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -118,11 +123,12 @@ footer
 
 canvas
 {
-    
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
-    height: 50%;
+    height: 100%;
     width: 100%;
-
+    z-index: -1;
 }
+
+

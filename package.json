@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "webpack-dev-server --mode development --open --watch",
-        "build": "webpack --mode production",
+        "build": "rm -rf dist && webpack --mode production",
         "install-fontello": "fontello-cli install --css ./src/fontello/css --font ./src/fontello/font"
     },
     "author": "Dominik Zbróg",
