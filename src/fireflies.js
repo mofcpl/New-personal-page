@@ -189,16 +189,7 @@ class world
     run()
     {
         setInterval(() => {this.render()},10);
-        this.render();
-        setTimeout(() => {this.render()},500);
-        setTimeout(() => {this.render()},1000);
-        setTimeout(() => {this.render()},1500);
-        setTimeout(() => {this.render()},2000);
-        setTimeout(() => {this.render()},3000);
-        setTimeout(() => {this.render()},3500);
-        setTimeout(() => {this.render()},4000);
-        setTimeout(() => {this.render()},4500);
-        setTimeout(() => {this.render()},5000);
+
 
     }
 }

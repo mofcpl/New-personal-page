@@ -17,6 +17,30 @@
       "css": "github-circled",
       "code": 61595,
       "src": "fontawesome"
-    }
+    },
+    {
+        "uid": "1e394b6cd5e0da3e10d8e4f3fe355960",
+        "css": "adult",
+        "code": 59392,
+        "src": "elusive"
+      },
+      {
+        "uid": "8b202d3dd1fd0541ed0d47d1279ec8f3",
+        "css": "code",
+        "code": 59393,
+        "src": "typicons"
+      },
+      {
+        "uid": "i7r8vgyqewsy2rlx0xhawybpw5uyss3z",
+        "css": "wrench-1",
+        "code": 59395,
+        "src": "typicons"
+      },
+      {
+        "uid": "499b745a2e2485bdd059c3a53d048e5f",
+        "css": "cancel",
+        "code": 59396,
+        "src": "elusive"
+      }
   ]
 }

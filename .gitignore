@@ -2,3 +2,4 @@ node_modules/
 dist/
 src/fontello
 package-lock.json
+.vs/

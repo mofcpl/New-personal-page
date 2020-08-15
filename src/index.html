@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
 
     <nav>
-        <a>Skills</a>
-        <a>Projects</a>
-        <a>Contact</a>
+        <a data-art="about" class="navBtn">About</a>
+        <a data-art="skills" class="navBtn">Skills</a>
+        <a data-art="projects" class="navBtn">Projects</a>
+        <a data-art="contact" class="navBtn">Contact</a>
     </nav>
 
     <header>
@@ -19,7 +21,7 @@
     </header>
 
     <footer>
-        <canvas></canvas>
+        <!--<canvas></canvas> -->
         <a>
             <i class="icon-linkedin-squared noise"></i>
         </a>
@@ -28,12 +30,202 @@
         </a>
     </footer>
 
-    <article class="loading">
-        <div class="spinner"></div>
+    <article class="about subpage">
+        <header>
+            <div></div>
+            <h1>O mnie</h1>
+            <div></div>
+        </header>
+        
+        <div class="scroll">
+            <section class="left">
+                <div>
+                    <i class="icon-adult"></i>
+                    <div>
+                        <h2>Kim jestem?</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="center">
+                <div>
+                    <i class="icon-code"></i>
+                    <div>
+                        <h2>Dlaczego programowanie</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="right">
+                <div>
+                    <i class="icon-wrench-1"></i>
+                    <div>
+                        <h2>Czym się zajmuje?</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quit">
+                <div>
+                    <i class="icon-cancel"></i>
+                </div>
+            </section>
+        </div>
+        
     </article>
-    <article class="skills"></article>
-    <article class="projects"></article>
-    <article class="contact"></article>
+    
+    <article class="skills subpage">
+        <header>
+            <div></div>
+            <h1>Umiejętności</h1>
+            <div></div>
+        </header>
+        <section class="first">
+            <div>
+                <div class="desc">
+                    <h2>Technologie</h2>
+                    <p>Technologie z jakich korzystałem w budowaniu porftseingod eoisfngs kld ewnjfss welkgjes wlekgjs leksjg slekj</p>
+                </div>
+                <div class="menu">
+                    <a>frontend</a>
+                    <a>backend</a>
+                    <a>narzędzia</a>
+                </div>
+                <div class="quit">
+                    <i class="icon-cancel"></i>    
+                </div>
+            </div>
+        </section>
+
+        <section class="second scroll">
+            <div>
+                <img src="image/html.png">
+                <span>html</span>
+            </div>
+            <div>
+                <img src="image/css.png">
+                <span>css</span>
+            </div>
+            <div>
+                <img src="image/js.png">
+                <span>javascript</span>
+            </div>
+            <div>
+                <img src="image/sass.png">
+                <span>sass</span>
+            </div>
+            <div>
+                <img src="image/react.png">
+                <span>react</span>
+            </div>
+            <div>
+                <img src="image/redux.png">
+                <span>redux</span>
+            </div>
+            <div>
+                <img src="image/node.png">
+                <span>node</span>
+            </div>
+            <div>
+                <img src="image/mongodb.png">
+                <span>mongodb</span>
+            </div>
+            <div>
+                <img src="image/npm.png">
+                <span>npm</span>
+            </div>
+            <div>
+                <img src="image/webpack.png">
+                <span>webpack</span>
+            </div>
+        </section>
+    </article>
+
+    <article class="projects subpage">
+        <header>
+            <div></div>
+            <h1>Portfolio</h1>
+            <div></div>
+        </header>
+        <div class="scroll">
+            <section>
+                <header><h2 class="logoCpa"><span>CSS</span>PatternApp</h2></header>
+                <p>Aplikacja służąca do zabijania nieboszczyków na śmierć</p>
+                <div>
+                    <a>github</a>
+                    <a>live</a>
+                </div>
+            </section>
+            <section>
+                <header><h2 class="logoAc">Air<span>check</span></h2></header>
+                <p>Aplikacja służąca do zabijania nieboszczyków na śmierć</p>
+                <div>
+                    <a>github</a>
+                    <a>live</a>
+                </div>
+            </section>
+            <section>
+                <header><h2 class="logoW">Wyrazówka</h2></header>
+                <p>Aplikacja służąca do zabijania nieboszczyków na śmierć</p>
+                <div>
+                    <a>github</a>
+                    <a>live</a>
+                </div>
+            </section>
+            <section>
+                <header><h2 class="logoP">Portfolio</h2></header>
+                <p>Aplikacja służąca do zabijania nieboszczyków na śmierć</p>
+                <div>
+                    <a>github</a>
+                    <a>live</a>
+                </div>
+            </section>
+            <section class="quit">
+                <div>
+                    <i class="icon-cancel"></i> 
+                </div>
+            </section>
+
+        </div>
+    </article>
+
+    <article class="contact subpage">
+        <header>
+            <div></div>
+            <h1>Kontakt</h1>
+            <div></div>
+        </header>
+        <div class="scroll">
+            <div class="background">
+                <form autocomplete="off">
+                    <input class="short" type="text" id="subject" name="subject" placeholder="Nazwisko">
+                    <input class="short" type="text" id="subject" name="subject" placeholder="Email">
+                    <input class="long" type="text" id="subject" name="subject" placeholder="Temat">
+                    <textarea placeholder="Treść wiadomości"></textarea>
+                    <input type="submit" value="Wyślij" class="short">
+                    <div class="quit short">
+                        <i class="icon-cancel"></i> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </article>
+    
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
 
 </body>
 </html>
