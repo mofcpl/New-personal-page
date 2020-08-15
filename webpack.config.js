@@ -38,23 +38,19 @@ const config = {
                 ]
             },
             {
-                test: /\.png$/,
-                use: [
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            mimetype: 'image/png'
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-                loader: 'url-loader',
+                test: /\.(png|svg|jpg|gif)$/,
+                loader: 'file-loader',
                 options: {
-                    name: './fonts/[name].[ext]?[hash]', // was '/fonts/[name].[ext]?[hash]',
+                  outputPath: 'images',
                 },
-            }
+              },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                loader: 'file-loader',
+                options: {
+                  outputPath: 'fonts',
+                },
+            },
         ]
     },
     plugins: [
