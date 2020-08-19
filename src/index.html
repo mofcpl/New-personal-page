@@ -79,7 +79,9 @@
 
             <section class="quit">
                 <div>
-                    <i class="icon-cancel"></i>
+                    <a data-art="about" class="quitBtn">
+                        <i class="icon-cancel"></i>
+                    </a>
                 </div>
             </section>
         </div>
@@ -104,7 +106,9 @@
                     <a>narzędzia</a>
                 </div>
                 <div class="quit">
-                    <i class="icon-cancel"></i>    
+                    <a data-art="skills" class="quitBtn">
+                        <i class="icon-cancel"></i> 
+                    </a>
                 </div>
             </div>
         </section>
@@ -194,7 +198,9 @@
             </section>
             <section class="quit">
                 <div>
-                    <i class="icon-cancel"></i> 
+                    <a data-art="projects" class="quitBtn">
+                        <i class="icon-cancel"></i>
+                    </a>
                 </div>
             </section>
 
@@ -209,14 +215,16 @@
         </header>
         <div class="scroll">
             <div class="background">
-                <form autocomplete="off">
-                    <input class="short" type="text" id="subject" name="subject" placeholder="Nazwisko">
-                    <input class="short" type="text" id="subject" name="subject" placeholder="Email">
-                    <input class="long" type="text" id="subject" name="subject" placeholder="Temat">
-                    <textarea placeholder="Treść wiadomości"></textarea>
+                <form autocomplete="off" action="https://postoffice.zbrogdom.pl" method="post">
+                    <input class="short" type="text" name="name" placeholder="Nazwisko">
+                    <input class="short" type="text" name="sender" placeholder="Email">
+                    <input class="long" type="text" name="subject" placeholder="Temat">
+                    <textarea name="msg"  placeholder="Treść wiadomości"></textarea>
                     <input type="submit" value="Wyślij" class="short">
                     <div class="quit short">
-                        <i class="icon-cancel"></i> 
+                        <a data-art="contact" class="quitBtn">
+                            <i class="icon-cancel"></i>
+                        </a>
                     </div>
                 </form>
             </div>

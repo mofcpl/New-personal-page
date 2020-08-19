@@ -199,8 +199,26 @@ article
             &:hover
             {
                 transform: none;
-                cursor: pointer;
             }
+            >a
+            {   
+                >i
+                {
+                    transition: 0.3s;
+                    transition-timing-function: ease-in-out;
+                }
+
+                &:hover
+                {
+                    cursor: pointer;
+                    >i
+                    {
+                        transform: rotate(90deg);
+                        
+                    }
+                }
+            }
+            
         }
     }
 
@@ -279,17 +297,24 @@ article
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                >i 
+
+                >a
                 {
-                    font-size: 70px;
-                    width: 100%;
-                    
+                    width: auto;
+                    height: auto;
+                    cursor: pointer;
+                    >i
+                    {
+                        font-size: 70px;
+                        width: 100%;
+                        
+                    }
+
                 }
+                
                 &:hover
                 {
-                    cursor: pointer;
                     background-color: white;
-                    
                     color: black;
                 }
             }
@@ -498,9 +523,15 @@ article
                 border: 1px solid white;
                 border-radius: 50%;
 
-                >i 
+
+                >a
                 {
-                    font-size: 100px;
+                    border: none;
+                    >i 
+                    {
+                        font-size: 100px;
+                    }
+                    
                 }
                 &:hover
                 {
@@ -508,6 +539,7 @@ article
                     background-color: white;
                     color: black;
                 }
+
             }
         }
 
@@ -597,9 +629,16 @@ article
 
                 >.quit
                 {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+
+
+                    >a
+                    {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width:100%;
+                        height: 100%;
+                    }
                 }
     
             }

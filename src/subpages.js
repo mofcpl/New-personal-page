@@ -5,6 +5,7 @@ const spinnerDiv = document.querySelector(".spinner")
 const articles = document.querySelectorAll('.subpage')
 const buttons = document.querySelectorAll(".navBtn");
 
+
 const navSelector = document.querySelector("nav");
 
 
@@ -56,5 +57,19 @@ articles.forEach((div) =>
     
     scroll.addEventListener('scroll', (e) => {
         checkScrollPosition(scroll, shadow);
+    }, false)
+})
+
+//quit buttons
+
+articles.forEach((div) => 
+{
+
+    const btn = div.querySelector(".quitBtn");
+    console.log(btn);
+
+    btn.addEventListener('click', (e) => 
+    {
+        div.classList.remove('show');
     }, false)
 })
