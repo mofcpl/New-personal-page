@@ -5,6 +5,11 @@ const spinnerDiv = document.querySelector(".spinner")
 const articles = document.querySelectorAll('.subpage')
 const buttons = document.querySelectorAll(".navBtn");
 
+const skills_icons = document.querySelectorAll(".skill-icon");
+const skills_buttons = document.querySelectorAll(".skillsBtn");
+const skills_parent = document.querySelector(".skills-parent");
+const toRemove = document.querySelectorAll(".tool, .backend");
+
 
 const navSelector = document.querySelector("nav");
 
@@ -41,7 +46,7 @@ buttons.forEach((button) =>
     }, false)
 })
 
-//Scrolling
+//Scrolling shadow
 
 const checkScrollPosition = (scroll, shadow) => 
 {
@@ -64,12 +69,49 @@ articles.forEach((div) =>
 
 articles.forEach((div) => 
 {
-
     const btn = div.querySelector(".quitBtn");
-    console.log(btn);
-
+    
     btn.addEventListener('click', (e) => 
     {
         div.classList.remove('show');
+    }, false)
+})
+
+//skills menu
+
+toRemove.forEach((icon) =>
+{
+    icon.remove();
+})
+
+let i = 0;
+
+const toggleSkills = (art) => 
+{
+
+    i=0;
+    skills_icons.forEach((icon,index) => {
+        if(icon.classList.value.includes(art))
+        {
+            skills_parent.appendChild(icon);
+            setTimeout(() =>
+            {
+                icon.classList.add('fade-out'); 
+            },100*i);
+            i++;
+        }
+        else
+        {
+            icon.classList.remove('fade-out');
+            icon.remove();
+        }
+    })
+}
+
+
+skills_buttons.forEach((button) => 
+{
+    button.addEventListener('click', (e) => {
+        toggleSkills(e.currentTarget.dataset.art)
     }, false)
 })

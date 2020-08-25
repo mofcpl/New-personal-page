@@ -9,23 +9,35 @@
 <body>
 
     <nav>
-        <a data-art="about" class="navBtn">About</a>
-        <a data-art="skills" class="navBtn">Skills</a>
-        <a data-art="projects" class="navBtn">Projects</a>
-        <a data-art="contact" class="navBtn">Contact</a>
+        <a data-art="about" class="navBtn">
+            <p class="text">o mnie</p>
+            <i class="icon icon-user"></i>
+        </a>
+        <a data-art="skills" class="navBtn">
+            <p class="text">umiejętności</p>
+            <i class="icon icon-pencil"></i>
+        </a>
+        <a data-art="projects" class="navBtn">
+            <p class="text">projekty</p>
+            <i class="icon icon-folder"></i>
+        </a>
+        <a data-art="contact" class="navBtn">
+            <p class="text">kontakt</p>
+            <i class="icon icon-mail-alt"></i>
+        </a>
     </nav>
 
     <header>
-        <h1 class=noise>Hey! I'm <span>Dominik</span></h1>
-        <h2>Junior Java - Script Developer.</h2>
+        <h1 class=noise>Dominik <span>Zbróg</span></h1>
+        <h2>Junior Java - Script Developer</h2>
     </header>
 
     <footer>
-        <!--<canvas></canvas> -->
-        <a>
+        <canvas></canvas>
+        <a href="https://www.linkedin.com/in/zbrogdom/" target="_blank">
             <i class="icon-linkedin-squared noise"></i>
         </a>
-        <a>
+        <a href="https://github.com/mofcpl" target="_blank">
             <i class="icon-github-circled noise"></i>
         </a>
     </footer>
@@ -40,7 +52,7 @@
         <div class="scroll">
             <section class="left">
                 <div>
-                    <i class="icon-adult"></i>
+                    <i class="icon-user"></i>
                     <div>
                         <h2>Kim jestem?</h2>
                         <p>
@@ -53,7 +65,7 @@
 
             <section class="center">
                 <div>
-                    <i class="icon-code"></i>
+                    <i class="icon-file-code"></i>
                     <div>
                         <h2>Dlaczego programowanie</h2>
                         <p>
@@ -66,7 +78,7 @@
             
             <section class="right">
                 <div>
-                    <i class="icon-wrench-1"></i>
+                    <i class="icon-wrench"></i>
                     <div>
                         <h2>Czym się zajmuje?</h2>
                         <p>
@@ -98,12 +110,12 @@
             <div>
                 <div class="desc">
                     <h2>Technologie</h2>
-                    <p>Technologie z jakich korzystałem w budowaniu porftseingod eoisfngs kld ewnjfss welkgjes wlekgjs leksjg slekj</p>
+                    <p>Posiadam podstawowe umiejętności z wymienionych technologi które to wykorzystałem w swoich projektach</p>
                 </div>
                 <div class="menu">
-                    <a>frontend</a>
-                    <a>backend</a>
-                    <a>narzędzia</a>
+                    <a data-art="frontend" class="skillsBtn">frontend</a>
+                    <a data-art="backend" class="skillsBtn">backend</a>
+                    <a data-art="tool" class="skillsBtn">narzędzia</a>
                 </div>
                 <div class="quit">
                     <a data-art="skills" class="quitBtn">
@@ -113,46 +125,66 @@
             </div>
         </section>
 
-        <section class="second scroll">
-            <div>
+        <section class="second scroll skills-parent">
+            <div class="frontend skill-icon fade-out">
                 <img src="image/html.png">
                 <span>html</span>
             </div>
-            <div>
+            <div class="frontend skill-icon fade-out">
                 <img src="image/css.png">
                 <span>css</span>
             </div>
-            <div>
+            <div class="frontend skill-icon fade-out">
                 <img src="image/js.png">
                 <span>javascript</span>
             </div>
-            <div>
+            <div class="frontend skill-icon fade-out">
                 <img src="image/sass.png">
                 <span>sass</span>
             </div>
-            <div>
+            <div class="frontend skill-icon fade-out">
                 <img src="image/react.png">
                 <span>react</span>
             </div>
-            <div>
+            <div class="frontend skill-icon fade-out">
                 <img src="image/redux.png">
                 <span>redux</span>
             </div>
-            <div>
+            <div class="backend skill-icon">
                 <img src="image/node.png">
                 <span>node</span>
             </div>
-            <div>
+            <div class="backend skill-icon">
                 <img src="image/mongodb.png">
                 <span>mongodb</span>
             </div>
-            <div>
+            <div class="tool skill-icon">
                 <img src="image/npm.png">
                 <span>npm</span>
             </div>
-            <div>
+            <div class="tool skill-icon">
                 <img src="image/webpack.png">
                 <span>webpack</span>
+            </div>
+            <div class="backend skill-icon">
+                <img src="image/expressjs.png">
+                <span>express</span>
+            </div>
+            <div class="backend skill-icon">
+                <img src="image/mongoose.png">
+                <span>mongoose</span>
+            </div>
+            <div class="tool skill-icon">
+                <img src="image/photoshop.png">
+                <span>photoshop</span>
+            </div>
+            <div class="tool skill-icon">
+                <img src="image/ubuntu.png">
+                <span>ubuntu</span>
+            </div>
+            <div class="tool skill-icon">
+                <img src="image/visual.png">
+                <span>visual studio code</span>
             </div>
         </section>
     </article>
@@ -168,32 +200,32 @@
                 <header><h2 class="logoCpa"><span>CSS</span>PatternApp</h2></header>
                 <p>Aplikacja służąca do zabijania nieboszczyków na śmierć</p>
                 <div>
-                    <a>github</a>
-                    <a>live</a>
+                    <a href="https://github.com/mofcpl/CSSPatternApp" target="_blank">github</a>
+                    <a href="https://csspatternapp.pl/" target="_blank">live</a>
                 </div>
             </section>
             <section>
                 <header><h2 class="logoAc">Air<span>check</span></h2></header>
                 <p>Aplikacja służąca do zabijania nieboszczyków na śmierć</p>
                 <div>
-                    <a>github</a>
-                    <a>live</a>
+                    <a href="https://github.com/mofcpl/air-test" target="_blank">github</a>
+                    <a href="https://air-check.pl/" target="_blank">live</a>
                 </div>
             </section>
             <section>
                 <header><h2 class="logoW">Wyrazówka</h2></header>
                 <p>Aplikacja służąca do zabijania nieboszczyków na śmierć</p>
                 <div>
-                    <a>github</a>
-                    <a>live</a>
+                    <a href="https://github.com/mofcpl/wyrazowka" target="_blank">github</a>
+                    <a href="https://wyrazowka.pl/" target="_blank">live</a>
                 </div>
             </section>
             <section>
                 <header><h2 class="logoP">Portfolio</h2></header>
                 <p>Aplikacja służąca do zabijania nieboszczyków na śmierć</p>
                 <div>
-                    <a>github</a>
-                    <a>live</a>
+                    <a href="https://github.com/mofcpl/New-personal-page" target="_blank">github</a>
+                    <a href="https://zbrogdom.pl/" target="_blank">live</a>
                 </div>
             </section>
             <section class="quit">
@@ -216,6 +248,8 @@
         <div class="scroll">
             <div class="background">
                 <form autocomplete="off" action="https://postoffice.zbrogdom.pl" method="post">
+                    <input style="display:none">
+                    <input type="password" style="display:none">
                     <input class="short" type="text" name="name" placeholder="Nazwisko">
                     <input class="short" type="text" name="sender" placeholder="Email">
                     <input class="long" type="text" name="subject" placeholder="Temat">

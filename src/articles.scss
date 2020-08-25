@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
@@ -34,9 +34,7 @@ article
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'Raleway', sans-serif;
-        font-size: 40px;
-        text-transform: uppercase;
+
         color: black;
         height: 80px;
         width: 100%;
@@ -53,9 +51,19 @@ article
         }
 
         >h1 
-        {
+        {   
+            font-family: 'Cinzel', serif;
+            font-size: 65px;
+            text-transform: uppercase;
             padding-left: 20px;
             padding-right: 20px;
+        }
+        @media screen and (max-width: 600px)
+        {
+            >h1
+            {
+                font-size: 11vw;
+            }
         }
     }
 
@@ -249,22 +257,40 @@ article
 
         >div
         {
-            width: 50%;
+            width: 60%;
             height: 100%;
+            
             min-width: 140px;
             margin-left: auto;
             margin-right: 0;
             color: white;
             text-align: center;
 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
             >.desc
             {
-                height: 30%;
+                >h2
+                {
+                    font-size: 30px;
+                }
+                >p
+                {
+                    font-size: 15px;
+                    margin-top: 10px;
+
+                    @media screen and (max-width: 400px)
+                    {
+                        font-size: 15px;
+                    }
+                }
             }
 
             >.menu
             {
-                height: 50%;
+                
 
                 display: flex;
                 flex-direction: column;
@@ -323,6 +349,15 @@ article
 
         }
 
+        @media screen and (max-width: 700px)
+        {
+            >div
+            {
+                width: 100%;
+                margin-right: auto;
+            }
+        }
+
         >.menu
         {
             margin-top: 100px;
@@ -332,21 +367,24 @@ article
 
     .second 
     {
+        justify-self: stretch;
         grid-row: 2/3;
         grid-column: 2/3;
         padding: 20px;
         display: flex;
         flex-wrap: wrap;
         align-content: flex-start;
+        
 
         >div
         {
             
-            filter: saturate(0);
+            filter: saturate(0.3);
             width: 120px;
             height: 150px;
             text-align: center;
-            transition: .5s;
+            transition: 0.5s;
+            opacity: 0;
 
             &:hover
             {
@@ -369,6 +407,23 @@ article
                 align-items: center;
             }
         }
+
+        >.fade-out
+        {
+            opacity: 1;
+        }
+
+        @media screen and (max-width: 600px)
+        {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+    }
+
+    @media screen and (max-width: 600px)
+    {
+        grid-template-columns: 3fr 2fr;
     }
 }
 
@@ -381,12 +436,12 @@ article
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding: 15px;
+        padding: 5px;
 
 
         >section 
         {
-            margin: 20px;
+            margin: 0px 20px 40px 20px;
             width: 500px;
             height: 300px;
             padding: 10px;
@@ -420,6 +475,10 @@ article
                 >h2
                 {
                     font-size: 60px;
+                    @media screen and (max-width: 550px)
+                    {
+                        font-size: 10vw;
+                    }
                 }
 
                 > .logoCpa
@@ -507,6 +566,15 @@ article
                 }
             }
 
+            @media screen and (max-width: 550px)
+            {
+                width: 90vw;
+                &:hover
+                {
+                    transform: none;
+                }
+            }
+
         }
 
         >.quit
@@ -575,7 +643,7 @@ article
                 color: white;
                 >input
                 {
-                    margin: 0.5vw;
+                    margin: 1%;
                     margin-top: 20px;
                     border-bottom: 1px solid white;
                     height: 25px;
@@ -587,32 +655,33 @@ article
 
                 >.short
                 {
-                    width: calc(57vw/2);
+                    width: 48%;
                 }
 
                 >.long
                 {
-                    width: 58vw;
+                    width: 98%;
                 }
 
                 >textarea
                 {
-                    margin: 0.5vw;
+                    margin: 1%;
                     box-sizing: border-box;
                     background-color: black;
                     border-bottom: 1px solid white;
-                    width: 58vw;
+                    width: 98%;
                     height: 200px;
                     resize: vertical;
                     box-sizing: border-box;
                     font-size: 20px;
                     font-family: 'Open Sans Condensed', sans-serif;
                     margin-top: 20px;
+                    overflow:hidden;
                 }
 
                 >input[type=submit], .quit
                 {
-                    margin: 0.5vw;
+                    margin: 1%;
                     
                     padding: 0;
                     margin-top: 20px;
@@ -639,6 +708,11 @@ article
                         width:100%;
                         height: 100%;
                     }
+                }
+
+                @media screen and (max-width: 800px)
+                {
+                    width: 80vw;
                 }
     
             }

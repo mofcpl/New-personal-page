@@ -1,46 +1,64 @@
 {
-  "name": "",
-  "css_prefix_text": "icon-",
-  "css_use_suffix": false,
-  "hinting": true,
-  "units_per_em": 1000,
-  "ascent": 850,
-  "glyphs": [
-    {
-      "uid": "1145676a91138011729fa2909997af66",
-      "css": "linkedin-squared",
-      "code": 62220,
-      "src": "fontawesome"
-    },
-    {
-      "uid": "0f6a2573a7b6df911ed199bb63717e27",
-      "css": "github-circled",
-      "code": 61595,
-      "src": "fontawesome"
-    },
-    {
-        "uid": "1e394b6cd5e0da3e10d8e4f3fe355960",
-        "css": "adult",
-        "code": 59392,
-        "src": "elusive"
+    "name": "",
+    "css_prefix_text": "icon-",
+    "css_use_suffix": false,
+    "hinting": true,
+    "units_per_em": 1000,
+    "ascent": 850,
+    "glyphs": [
+      {
+        "uid": "ccc2329632396dc096bb638d4b46fb98",
+        "css": "mail-alt",
+        "code": 61664,
+        "src": "fontawesome"
       },
       {
-        "uid": "8b202d3dd1fd0541ed0d47d1279ec8f3",
-        "css": "code",
+        "uid": "d35a1d35efeb784d1dc9ac18b9b6c2b6",
+        "css": "pencil",
         "code": 59393,
-        "src": "typicons"
+        "src": "fontawesome"
       },
       {
-        "uid": "i7r8vgyqewsy2rlx0xhawybpw5uyss3z",
-        "css": "wrench-1",
+        "uid": "8b80d36d4ef43889db10bc1f0dc9a862",
+        "css": "user",
+        "code": 59394,
+        "src": "fontawesome"
+      },
+      {
+        "uid": "f8aa663c489bcbd6e68ec8147dca841e",
+        "css": "folder",
+        "code": 59392,
+        "src": "fontawesome"
+      },
+      {
+        "uid": "5bb103cd29de77e0e06a52638527b575",
+        "css": "wrench",
         "code": 59395,
-        "src": "typicons"
+        "src": "fontawesome"
       },
       {
-        "uid": "499b745a2e2485bdd059c3a53d048e5f",
+        "uid": "0f6a2573a7b6df911ed199bb63717e27",
+        "css": "github-circled",
+        "code": 61595,
+        "src": "fontawesome"
+      },
+      {
+        "uid": "1145676a91138011729fa2909997af66",
+        "css": "linkedin-squared",
+        "code": 62220,
+        "src": "fontawesome"
+      },
+      {
+        "uid": "5211af474d3a9848f67f945e2ccaf143",
         "css": "cancel",
         "code": 59396,
-        "src": "elusive"
+        "src": "fontawesome"
+      },
+      {
+        "uid": "26613a2e6bc41593c54bead46f8c8ee3",
+        "css": "file-code",
+        "code": 61897,
+        "src": "fontawesome"
       }
-  ]
-}
+    ]
+  }
