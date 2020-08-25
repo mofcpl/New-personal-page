@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
@@ -52,7 +52,8 @@ article
 
         >h1 
         {   
-            font-family: 'Cinzel', serif;
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
             font-size: 65px;
             text-transform: uppercase;
             padding-left: 20px;
