@@ -20,7 +20,7 @@ form.addEventListener("submit",async e =>
 
     try
     {
-        const response = await fetch("https://postoffice.zbrogdo.pl",
+        const response = await fetch("https://postoffice.zbrogdom.pl",
         {
             headers: {"Content-type": "application/json; charset=UTF-8"},
             method: "post", 
