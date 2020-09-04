@@ -11,7 +11,6 @@ response_success.remove();
 response_failed.remove();
 
 const background_height = background.offsetHeight;
-console.log(background_height);
 
 form.addEventListener("submit",async e => 
 {
@@ -40,7 +39,12 @@ form.addEventListener("submit",async e =>
         }
         else
         {
+            background.classList.add("small");
             background.appendChild(response_success);
+            setTimeout( () => 
+            {
+                response_success.classList.add("show");
+            },500);
         }
     }
     catch(err)
