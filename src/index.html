@@ -273,10 +273,10 @@
                 <form autocomplete="off" action="#">
                     <input style="display:none">
                     <input type="password" style="display:none">
-                    <input class="short" type="text" name="name" placeholder="Nazwisko">
-                    <input class="short" type="text" name="sender" placeholder="Email">
-                    <input class="long" type="text" name="subject" placeholder="Temat">
-                    <textarea name="msg" placeholder="Treść wiadomości"></textarea>
+                    <input class="short" type="text" name="name" placeholder="Imię" required>
+                    <input class="short" type="email" name="sender" placeholder="Email" required>
+                    <input class="long" type="text" name="subject" placeholder="Temat" required>
+                    <textarea name="msg" placeholder="Treść wiadomości" required></textarea>
                     <input type="submit" value="Wyślij" class="short">
                     <div class="quit short">
                         <a data-art="contact" class="quitBtn">
@@ -290,7 +290,7 @@
                         Wiadomość została wysłana
                     </h1>
                     <p>
-                        Oczekuj odpowiedzi wkrótce
+                        Postaram się odpowiedzieć jak najszybciej
                     </p>
                 </div>
 
